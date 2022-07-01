@@ -1,6 +1,4 @@
 import React from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 import { FaSearch } from 'react-icons/fa';
 import { FaShoppingCart } from 'react-icons/fa';
 function NavBar() {
