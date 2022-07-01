@@ -215,3 +215,44 @@ margin-top:12px
   color: #10101D;
   font-weight:bold;
 }
+
+/* testimonal */
+
+.testional-container{
+  padding-top:60px;
+  display:flex;
+ 
+  height:400px;
+  margin-top:5%
+}
+.testional-description{
+ width: 50%;
+ padding-left:100px
+}
+.testional-description span{
+  font-size:14px;
+  font-weight:bold;
+  color :#B3B4B6
+
+}
+.testional-description .testional-title{
+  font-size:35px;
+  padding-top:15px;
+  font-weight:bold;
+}
+.testional-description .testional-title-description{
+  padding-top:15px;
+  line-height:1.8;
+  color: #8E9196;
+}
+.testional-description button{
+  background-color:#1688E3;
+border:none;
+border-radius:10px;
+color: #fff;
+font-size:18px;
+font-weight:bold;
+width: 25%;
+padding:10px 20px;
+margin-top:12px
+}
