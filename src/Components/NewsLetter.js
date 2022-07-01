@@ -10,7 +10,12 @@ function NewsLetter() {
             <input placeholder="Enter Your email" />
             </div>
         </div>
-        
+        <div className="newsletter-massage">
+            <p className="first-msg">Hey there...</p>
+            <p className="second-msg">Hey , thnak you for shopping if you have any questionn ,i`m here to help you.</p>
+            <input placeholder="Write a massage"/>
+        </div>
+
     </div>
   )
 }
