@@ -11,7 +11,7 @@ function NavBar() {
             <a>HOME</a>
             <a>PRODUCTS</a>
             <a>ABOUT</a>
-            <a>ABOUT</a>
+            <a>Support</a>
         </div>
         <div className="navBar-icon">
         <FaSearch className="search-icon"/>
