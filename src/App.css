@@ -1,6 +1,7 @@
 *{
   margin: 0px;
   padding: 0px;
+  font-family: Arial
 }
 
 /* NavBar*/
@@ -42,4 +43,38 @@
   height: 600px;
   width: 100%;
   background-color:#C0DAFF
+}
+
+/* sub header*/ 
+.subheader-description{
+  display:flex;
+  flex-direction: column;
+  width: 50%;
+
+  padding-top:50px;
+  padding-left: 100px;
+
+}
+
+.subheader-description h1{
+  font-size:45px;
+  color:#2C2B2D
+ 
+}
+.subheader-description p{
+  color: #A7B5C1;
+  font-size: 12px;
+  line-height:1.8;
+  padding-top: 15px;
+}
+.subheader-description button{
+background-color:#1688E3;
+border:none;
+border-radius:10px;
+color: #fff;
+font-size:18px;
+font-weight:bold;
+width: 25%;
+padding:10px 20px;
+margin-top:12px
 }
