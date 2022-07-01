@@ -5,12 +5,12 @@ function NewsLetter() {
     <div className="newsletter-container">
         <div className="newsletter-description">
             <span>NEWLETTER</span>
-            <p>Subscribe our <br/>newsletter</p>
+            <p>Subscribe our <br/>news letter</p>
             <div className="newsletter-input">
-            <input placeholder="Enter Your email"/>
-            <FaRegArrowAltCircleRight />
+            <input placeholder="Enter Your email" />
             </div>
         </div>
+        
     </div>
   )
 }

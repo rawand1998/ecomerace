@@ -256,3 +256,31 @@ width: 25%;
 padding:10px 20px;
 margin-top:12px
 }
+
+/* new letter section*/
+.newsletter-container{
+  display:flex;
+  background-color: #FFF6CD;
+  padding-top: 25px;
+  padding-left: 80PX;
+  padding-top: 70px;
+  height:300px;
+  width: 85%;
+  margin-left:5%;
+  margin-right: 10%;
+  border-radius:25px
+}
+.newsletter-container span{
+  color:#B8AB76;
+  font-weight:bold;
+
+}
+.newsletter-description p{
+  font-size:35px;
+  font-weight: bold;
+  padding-top: 15px;
+}
+.newsletter-description input{
+  border:none;padding: 20px;
+  margin-top: 15px;
+}
