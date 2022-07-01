@@ -181,3 +181,37 @@ margin-top:12px
   height:100px;
   width:143px;
 }
+
+/* product section*/
+.product-container{
+  padding-top:60px;
+  display:flex;
+  background-color: #FEF4E8;
+  height:400px;
+  margin-top:5%
+}
+.product-description{
+ width: 50%;
+ padding-left:100px
+}
+.product-description span{
+  font-size:14px;
+  font-weight:bold;
+  color :#B3B4B6
+
+}
+.product-description .product-title{
+  font-size:35px;
+  padding-top:15px;
+  font-weight:bold;
+}
+.product-description .product-title-description{
+  padding-top:15px;
+  line-height:1.8;
+  color: #9A9188;
+}
+.product-description .product-explore{
+  padding-top:50px;
+  color: #10101D;
+  font-weight:bold;
+}
