@@ -18,6 +18,10 @@ function ProductPageDetails() {
     };
     getproductDetails();
   });
+  const increaAmount = (productAmount)=>{
+    db.collection('products').doc(param.id).update({amount : productAmount+1})
+   
+  }
   return <div>
 
           <img src={product.productImg} />
@@ -25,7 +29,7 @@ function ProductPageDetails() {
             <p>{product.description}</p>
             <span>{product.price}</span>
             <span>{product.category}</span>
-            <span>{product.amount}</span>
+            <p>{product.amount} <button onClick={()=>increaAmount(product.amount)}>+</button></p>
     </div>;
 }
 
