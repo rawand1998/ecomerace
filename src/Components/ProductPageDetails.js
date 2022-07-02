@@ -20,11 +20,12 @@ function ProductPageDetails() {
     };
     getproductDetails();
   });
-  console.log(product)
+
   const increaAmount = (productAmount, price) => {
+    console.log(price,"==========")
     db.collection("products")
       .doc(param.id)
-      .update({ amount: productAmount + 1,price:price*(productAmount+1)})
+      .update({ amount: productAmount +1, price:price * (++productAmount)})
     }
     const shoppineCart = (productName,productAmount,productPrice)=>{
         console.log("product",productName,productAmount,productPrice)
@@ -35,19 +36,30 @@ function ProductPageDetails() {
         })
     }
   return (
-    <div>
+    <div className="details">
+    <div className="product-details">
       <img src={product.productImg} />
+      <div className="product-details-description">
+        <span className="productName">product Name</span>
       <h3>{product.prorductName}</h3>
+      <span className="productDescription">product description</span>
       <p>{product.description}</p>
-      <span>{product.price}</span>
-      <span>{product.category}</span>
-      <p>
+      <span className="price">price: {product.price}</span>
+      <span className="price">Category: {product.category}</span>
+      
+      <p className="amount">
+        Amount:
         {product.amount}{" "}
-        <button onClick={() => increaAmount(product.prorductName,product.amount, product.price)}>
+        <button className="btn-amount"onClick={() => increaAmount(product.amount,product.price)}>
           +
         </button>
       </p>
-      <button onClick={()=>shoppineCart(product.prorductName,product.amount, product.price)}>Add to cart</button>
+      <button className="btn-details" onClick={()=>shoppineCart(product.prorductName,product.amount, product.price)}>Add to cart</button>
+      </div>
+    
+     
+    </div>
+  
     </div>
   );
 }

@@ -22,7 +22,7 @@ function ProductsPage() {
 
   }
   return <div className="products-firestore">
-    {/* <Header /> */}
+
     {productsList.map((product) =>{
         
         return (
