@@ -6,15 +6,17 @@ import Product from './Components/Product';
 import Testimonal from './Components/Testimonal';
 import NewsLetter from './Components/NewsLetter';
 import Footer from './Components/Footer';
+import ProductsPage from './Components/ProductsPage';
 function App() {
   return (
     <div className="App">
-    <Header />
+    {/* <Header />
     <About />
     <Product />
     <Testimonal />
     <NewsLetter />
-    <Footer />
+    <Footer /> */}
+    <ProductsPage />
     </div>
   );
 }
