@@ -14,7 +14,7 @@ function NavBar() {
         </div>
         <div className="navBar-icon">
         <FaSearch className="search-icon"/>
-        <FaShoppingCart className="cart"/>
+        <Link to="/shopping/cart"><FaShoppingCart className="cart"/></Link>
        
         </div>
     </div>
