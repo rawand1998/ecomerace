@@ -25,7 +25,7 @@ function ProductsPage() {
         return (
           <div key={product.id}>
             <img src={product.productImg} />
-            <h3>{product.productName}</h3>
+            <h3>{product.prorductName}</h3>
             <p>{product.description}</p>
             <span>{product.price}</span>
             <span>{product.category}</span>
