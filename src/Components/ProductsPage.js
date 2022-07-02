@@ -8,7 +8,7 @@ function ProductsPage() {
   useEffect(() => {
     const getProducts = async () => {
       const data = await getDocs(productRef);
-      setProductsList(data.docs.map((item)=>({...item.data()})));
+      setProductsList(data.docs.map((item)=>({...item.data(),id: item.id})));
       console.log(productsList);
     };
     getProducts();
