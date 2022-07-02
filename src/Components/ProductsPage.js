@@ -3,6 +3,7 @@ import firebase from "../firebase";
 import { db } from "../firebase";
 import { getDocs, collection } from "firebase/firestore";
 import { useNavigate } from "react-router-dom";
+import Header from "./Header";
 function ProductsPage() {
   const [productsList, setProductsList] = useState([]);
   const productRef = collection(db, "products");
@@ -20,10 +21,13 @@ function ProductsPage() {
     navigate(`/products/${id}`);
 
   }
-  return <div>
+  return <div className="products-firestore">
+    {/* <Header /> */}
     {productsList.map((product) =>{
+        
         return (
-          <div key={product.id}>
+            <div className="">
+          <div key={product.id} >
             <img src={product.productImg} />
             <h3>{product.prorductName}</h3>
             <p>{product.description}</p>
@@ -31,8 +35,9 @@ function ProductsPage() {
             <span>{product.category}</span>
             <button onClick={()=>addCart(product.id)}>Show Details</button>
           </div>
-            
+          </div>
         )
+        
     })}
   </div>;
 }
