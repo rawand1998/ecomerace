@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import firebase from "../firebase";
 import { db } from "../firebase";
-import { getDocs, collection, deleteDoc, doc } from "firebase/firestore";
+import { getDocs, collection } from "firebase/firestore";
 import { useNavigate } from "react-router-dom";
 function ProductsPage() {
   const [productsList, setProductsList] = useState([]);
@@ -17,13 +17,13 @@ function ProductsPage() {
   }, []);
   
   const addCart =(id)=>{
-    navigate(`/details/page/${id}`);
+    navigate(`/products/${id}`);
 
   }
   return <div>
     {productsList.map((product) =>{
         return (
-          <div>
+          <div key={product.id}>
             <img src={product.productImg} />
             <h3>{product.productName}</h3>
             <p>{product.description}</p>
