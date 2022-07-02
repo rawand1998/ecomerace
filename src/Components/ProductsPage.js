@@ -29,7 +29,7 @@ function ProductsPage() {
             <p>{product.description}</p>
             <span>{product.price}</span>
             <span>{product.category}</span>
-            <button onClick={()=>addCart(product.id)}>Add to cart</button>
+            <button onClick={()=>addCart(product.id)}>Show Details</button>
           </div>
             
         )
