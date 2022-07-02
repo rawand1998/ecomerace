@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-// import { db } from "../firebase";
+
 import firebase from "../firebase";
-import { getDocs, collection, query, doc } from "firebase/firestore";
+import { getDocs, collection, query, doc,addDoc } from "firebase/firestore";
 function ProductPageDetails() {
   const db = firebase.firestore();
   const param = useParams();
 
   const [product, setProduct] = useState([]);
-  const [amountfire,setAmountFire] =useState(0);
+ 
   useEffect(() => {
     const getproductDetails = async () => {
       db.collection("products")
@@ -25,6 +25,10 @@ function ProductPageDetails() {
       .doc(param.id)
       .update({ amount: productAmount + 1,price:price*(productAmount+1)})
     }
+    const shoppineCart = (product)=>{
+        console.log("product",product)
+        db.collection("cart").doc(param.id).set({product})
+    }
   return (
     <div>
       <img src={product.productImg} />
@@ -38,6 +42,7 @@ function ProductPageDetails() {
           +
         </button>
       </p>
+      <button onClick={()=>shoppineCart(product)}>Add to cart</button>
     </div>
   );
 }
