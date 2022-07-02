@@ -31,6 +31,10 @@
   font-size:12px;
   font-weight:600
 }
+.product-navbar{
+  color: #000000;
+  text-decoration: none;
+}
 .navBar-icon{
   display:flex;
   align-items:center;
