@@ -27,12 +27,14 @@ function ProductsPage() {
         
         return (
             <div className="">
-          <div key={product.id} >
+          <div key={product.id} className="product">
             <img src={product.productImg} />
+            <div className="pro">
             <h3>{product.prorductName}</h3>
-            <p>{product.description}</p>
-            <span>{product.price}</span>
-            <span>{product.category}</span>
+         
+            <span>Price: {product.price}$</span><br/>
+            <span>Category: {product.category}</span><br />
+            </div>
             <button onClick={()=>addCart(product.id)}>Show Details</button>
           </div>
           </div>

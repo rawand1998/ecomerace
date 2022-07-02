@@ -382,7 +382,43 @@ margin-top:12px
 /*products page*/
 .products-firestore{
   display: flex;
-  background-color: #f00;
-  justify-content: space-between;
+  width: 100%;
+  
+  /* justify-content: space-around; */
   flex-direction: row;
+/* margin-right: 10%; */
+  margin-left: 12%; 
+  margin-top: 50px;
+  flex-wrap: wrap;
+ 
+}
+.product {
+display:flex;
+flex-direction: column;
+
+width:60%;
+height:600px
+}
+.product img{
+  width: 100%;
+  border-radius:15px
+}
+.pro{
+  background-color: #fff;
+  opacity:0.8;
+  margin-top:-35%;
+  border-top: 2px solid #fff;
+  color: #000;
+  text-align: center;
+  border-radius:15px;
+  padding: 8px;
+}
+.product button{
+  border-radius:5px;
+border:1px solid #ddd;
+width: 50%;
+margin-left:25%;
+margin-top: 5%;
+padding: 5px;
+box-shadow: 1px 1px 1px 1px #fff;
 }
