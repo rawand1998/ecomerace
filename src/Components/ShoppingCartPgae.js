@@ -11,8 +11,9 @@ function ShoppingCartPgae() {
         
   const getProductsInCart = async()=>{
     const data = await getDocs(cartRef)
-    // setProductInCart(data.docs.map((item)=>({...item.data(),id: item.id})));
-      setProductInCart(data.docs.map((item)=>console.log(item.data())));
+    setProductInCart(data.docs.map((item)=>({...item.data(),id: item.id})));
+    //   setProductInCart(data.docs.map((item)=>console.log(item.data())));
+
    
 
   }
@@ -21,7 +22,20 @@ function ShoppingCartPgae() {
 
   return<div>
    
-   
+   {productInCart.map((product) =>{
+        return (
+          <div key={product.id}>
+     
+            <h3>{product.productName}</h3>
+          
+            <span>{product.price}</span><br />
+            <span>{product.amount}</span>
+            
+        
+          </div>
+            
+        )
+    })}
   </div>;
 }
 
