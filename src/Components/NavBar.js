@@ -19,14 +19,14 @@ function NavBar() {
         <div className="list">
         <Link to="/" className="product-navbar">HOME</Link>
             <Link to="/products" className="product-navbar">PRODUCTS</Link>
-            <a>ABOUT</a>
+            <a>Login</a>
             <a>Support</a>
         </div>
         <div className="navBar-icon">
         <FaSearch className="search-icon"/>
         <Link to="/shopping/cart">
           <FaShoppingCart className="cart"/>
-          <sub>{cartNo}</sub>
+          <sup>{cartNo}</sup>
         </Link>
        
         </div>

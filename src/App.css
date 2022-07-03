@@ -41,7 +41,15 @@
   margin-right:20px;
  
 }
-
+sup{
+  /* background-color: #1688E3; */
+  margin-top:-100%;
+  text-decoration: none;
+  margin-left: -40%;
+  color: #000;
+  font-weight: bold;
+  font-size:14px
+}
 .cart{
   border: 1px solid #ccc;
   margin-right: 20px;
@@ -167,7 +175,7 @@ color: #000000;
 }
 
 .subheader-image img{
-  width: 80%;
+  width: 90%;
 }
 /* sub header*/ 
 .subheader-description{
@@ -181,13 +189,16 @@ color: #000000;
 }
 
 .subheader-description h1{
-  font-size:45px;
+  font-size:55px;
   color:#2C2B2D
  
 }
+strong{
+  color:#FE824D
+}
 .subheader-description p{
   color: #A7B5C1;
-  font-size: 12px;
+  font-size: 16px;
   line-height:1.8;
   padding-top: 15px;
 }
@@ -198,7 +209,7 @@ border-radius:10px;
 color: #fff;
 font-size:18px;
 font-weight:bold;
-width: 25%;
+width: 50%;
 padding:10px 20px;
 margin-top:12px
 }
@@ -527,19 +538,13 @@ margin-left: 5px;
 
   /* border-radius:15px */
 }
- .pro p{
-  color: rgb(87, 87, 87);
-  text-align: center;
-  border-radius:15px;
-  padding: 8px;
-  font-size: 16px;
-}
+
 .pro p{
   color: rgb(87, 87, 87);
   text-align: center;
   border-radius:15px;
   padding: 10px;
-  font-size: 16px;
+  font-size: 14px;
   height:50px
 }
 
@@ -638,4 +643,69 @@ width:50px;
   background-color: #1688E3;
   color: #FFFFFF;
   border:none;
+}
+
+/* shopping-cart*/
+.cart-item{
+  /* width: 50%; */
+  margin-top: 50px;
+display: flex;
+justify-content:center;
+border-bottom: 1px solid #ddd;
+/* margin-left: 25%; */
+align-items:center;
+padding: 0;
+}
+.shope-container{
+ 
+  display: flex;
+  flex-direction: column;
+  border:1px solid #ddd;
+  width: 50%;
+  margin-top:70px;margin-left:25%
+}
+.cart-item h3{
+  font-size: 16px;
+  border-right: 1px solid #ddd;
+margin-left: -90px;
+}
+.cart-item .price{
+  /* padding-left: 20px; */
+  /* margin-top: -2px; */
+ padding: 10px;
+  border-right: 1px solid #ddd;
+}
+.cart-item .amount{
+  padding: 10px;
+  border-right: 1px solid #ddd;
+  /* margin-top: -2%; */
+  border-right: 1px solid #ddd;
+}
+.delete-btn{
+  padding: 10px;
+  background-color: #f00;
+  border: none;
+  color: #fff;
+}
+.shope-label{
+  display:flex;
+  justify-content: space-between;
+}
+.shope-name{
+  color: #000;
+  font-weight: bold;
+padding-left: 25%;
+padding-top: 15px;
+}
+.shope-price{
+  color: #000;
+  font-weight: bold;
+padding-left: 10%;
+padding-top: 15px;
+}
+.shop-amount{
+  color: #000;
+  font-weight: bold;
+padding-right: 15%;
+padding-top: 15px;
 }

@@ -2,7 +2,9 @@ import React, { useState, useEffect } from "react";
 
 import firebase from "../firebase";
 import { getDocs, collection } from "firebase/firestore";
-
+import NavBar from "./NavBar";
+import SubNavBar from "./SubNavBar";
+import { FaTrashAlt } from 'react-icons/fa';
 function ShoppingCartPgae() {
   const [productInCart, setProductInCart] = useState([]);
   const db = firebase.firestore();
@@ -24,16 +26,25 @@ function ShoppingCartPgae() {
   };
   return (
     <div>
+      <div>
+        <NavBar />
+        <SubNavBar />
+      </div>
+      <div></div>
       {productInCart.map((product) => {
         return (
-          <div key={product.id}>
+          <div className="shope-container">
+          <div key={product.id} className="cart-item">
             <h3>{product.productName}</h3>
 
-            <span>{product.price}</span>
+            <p className="price">{product.price}</p>
             <br />
-            <span>{product.amount}</span>
+            <p className="amount">{product.amount}</p>
 
-            <button onClick={() => deleteproduct(product.id)}>Delete</button>
+            <button onClick={() => deleteproduct(product.id)} className="delete-btn">
+              <FaTrashAlt />
+            </button>
+          </div>
           </div>
         );
       })}
