@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 import Header from "./Header";
 function ProductsPage() {
   const [productsList, setProductsList] = useState([]);
-  const [selected, setSelected] = useState("all");
+  const [selected, setSelected] = useState("clothes");
   const db = firebase.firestore();
   const productRef = collection(db, "products");
   let navigate = useNavigate();
@@ -32,10 +32,10 @@ function ProductsPage() {
   return (
     <div className="products-firestore">
       <select onChange={(e) => setSelected(e.target.value)} value={selected}>
-        <option value="all">all</option>
-        <option value="shoe">shoe</option>
+        
+        <option value="clothes">clothes</option>
         <option value="bag">bag</option>
-        <option value="woman">woman</option>
+        <option value="shoe">shoe</option>
       </select>
       {productsList.map((product) => {
         return (
