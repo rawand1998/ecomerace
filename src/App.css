@@ -56,13 +56,24 @@ color: #000;
 font-size:20px
 }
 /* Header*/
+.subheader-conatiner{
+  display: flex;
+  justify-content:space-around
+}
 .header-container{
  
   height: 600px;
   width: 100%;
   background-color:#C0DAFF
 }
+.subheader-image{
+  width: 100%;
+  margin-left: 15%;
+}
 
+.subheader-image img{
+  width: 80%;
+}
 /* sub header*/ 
 .subheader-description{
   display:flex;
