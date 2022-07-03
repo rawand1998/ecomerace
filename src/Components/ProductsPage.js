@@ -3,8 +3,9 @@ import firebase from "../firebase";
 // import { db } from "../firebase";
 import { getDocs, collection } from "firebase/firestore";
 import { useNavigate } from "react-router-dom";
-import Header from "./Header";
+import StaticData from "./StaticData";
 import NavBar from "./NavBar";
+import Footer from "./Footer";
 function ProductsPage() {
   const [productsList, setProductsList] = useState([]);
   const [selected, setSelected] = useState("clothes");
@@ -33,51 +34,27 @@ function ProductsPage() {
   return (
     <div>
       <NavBar />
-      <div className="sub-navabr">
-        <a>new in</a>
-        <a>summer fits</a>
-        <a>going out</a>
-        <a>dresses</a>
-        <a>occasion</a>
-        <a>tops</a>
-        <a>trousers</a>
-        <a>clothing</a>
-        <a>shop by body fit</a>
-        <a>shoes</a>
-        <a>mg kids</a>
-        <a>homeware</a>
-        <a>sale</a>
-      </div>
-      <div className="pink-navbar">
-        <div className="pink">
-          <h3>SUMMAR IS HERE!</h3>
-          <p>Shop summar outfits</p>
-        </div>
-        <div className="pink2">
-        <h3>50% FOR EVERYTHING!CODE:TAVER</h3>
-          <p>limit time only</p>
-        </div>
-        <div className="pink3">
-        <h3>EVERY THING MUST GO!</h3>
-          <p>secure the bag now</p>
-        </div>
-      </div>
-      <select onChange={(e) => setSelected(e.target.value)} value={selected}>
+       <StaticData />
+       <p className="category-label">Category Filter:</p>
+       <div className="selected">
+      <select onChange={(e) => setSelected(e.target.value)} value={selected} className="selected-input" >
         <option value="clothes">clothes</option>
         <option value="bag">bag</option>
         <option value="shoe">shoe</option>
       </select>
+      </div>
+      <div  className="filter-product">
       {productsList.map((product) => {
         return (
-          <div className="">
+          <div>
             <div key={product.id} className="product">
               <img src={product.productImg} />
               <div className="pro">
-                <h3>{product.prorductName}</h3>
+                <p>{product.prorductName}</p>
 
-                <span>Price: {product.price}$</span>
+                <p>Price: {product.price}$</p>
                 <br />
-                <span>Category: {product.category}</span>
+                {/* <span>Category: {product.category}</span> */}
                 <br />
               </div>
               <button onClick={() => addCart(product.id)}>Show Details</button>
@@ -85,6 +62,8 @@ function ProductsPage() {
           </div>
         );
       })}
+      </div>
+      <Footer />
     </div>
   );
 }
