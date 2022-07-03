@@ -71,6 +71,32 @@ font-size:20px
   justify-content:space-around;
   color: #2C2B2D;
 }
+/*pink nav bar*/
+.pink-navbar{
+  display: flex;
+  justify-content:space-around;
+  background-color: #FFDED9;
+  padding: 15px;
+}
+.pink-navbar .pink p{
+padding-left: 15px;
+padding-top: 5px;
+font-weight: 400;
+color: #000000;
+}
+.pink-navbar .pink2 p{
+  padding-left: 100px;
+  padding-top: 5px;
+  font-weight: 400;
+  color: #000000;
+  }
+  .pink-navbar .pink3 p{
+    padding-left: 50px;
+    padding-top: 5px;
+    font-weight: 400;
+    color: #000000;
+    /* margin-top:5% */
+    }
 /* Header*/
 .subheader-conatiner{
   display: flex;
