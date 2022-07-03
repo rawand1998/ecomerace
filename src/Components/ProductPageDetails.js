@@ -22,13 +22,13 @@ function ProductPageDetails() {
   });
 
   const increaAmount = (productAmount, price) => {
-    console.log(price,"==========")
+  
     db.collection("products")
       .doc(param.id)
       .update({ amount: productAmount +1, price:price * (++productAmount)})
     }
     const shoppineCart = (productName,productAmount,productPrice)=>{
-        console.log("product",productName,productAmount,productPrice)
+        
         db.collection("cart").doc(param.id).set({
             productName:productName,
             amount:productAmount,
