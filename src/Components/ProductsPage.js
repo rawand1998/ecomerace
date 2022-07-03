@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import firebase from "../firebase";
 // import { db } from "../firebase";
+import SubNavBar from "./SubNavBar";
 import { getDocs, collection } from "firebase/firestore";
 import { useNavigate } from "react-router-dom";
 import StaticData from "./StaticData";
@@ -34,6 +35,7 @@ function ProductsPage() {
   return (
     <div>
       <NavBar />
+<SubNavBar />
        <StaticData />
        <p className="category-label">Category Filter:</p>
        <div className="selected">

@@ -576,6 +576,10 @@ margin-top: -1.5%;
   margin-top: 5%;
  
 }
+.product-details img{
+  width: 45%;
+  height: 500px;
+}
 .product-details-description{
   display: flex;
   flex-direction: column;
@@ -589,8 +593,9 @@ height:50px;
 width:50px;
 }
 .product-details-description  h3{
-  color: #1688E3;
-  font-size:35px;
+  color: #000000;
+  font-size:30px;
+  padding-top:15px
 
 }
 .product-details-description p{
@@ -619,11 +624,12 @@ width:50px;
 }
 .btn-details{
   padding: 10px;
-  background-color: #1688E3;
-  color: #FFFFFF;
+  background-color: #fff;
+  color: #000000;
   border:none;
  margin-top:15px;
  width: 50%;
+ border:1px solid #ddd;
  
   
 }
