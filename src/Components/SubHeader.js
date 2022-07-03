@@ -8,7 +8,9 @@ function SubHeader() {
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br />Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
             <button>Explore Now</button>
         </div>
-        <div className="subheader-image"></div>
+        <div className="subheader-image">
+          <img src="../../assets/header.png" />
+        </div>
     </div>
   )
 }

@@ -1,5 +1,5 @@
 import React from 'react'
-import Header from './Header';
+
 import About from './About';
 import Product from './Product';
 import Testimonal from './Testimonal';
@@ -10,7 +10,7 @@ function Home() {
   return (
     <div>
        
-    <Header />
+   
     <About />
     <Product />
     <Testimonal />

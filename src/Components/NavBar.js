@@ -8,13 +8,13 @@ function NavBar() {
         <div className="logo"><h2>Bensike</h2></div>
         <div className="list">
             <a>HOME</a>
-            <Link to="/products">PRODUCTS</Link>
+            <Link to="/products" className="product-navbar">PRODUCTS</Link>
             <a>ABOUT</a>
             <a>Support</a>
         </div>
         <div className="navBar-icon">
         <FaSearch className="search-icon"/>
-        <FaShoppingCart className="cart"/>
+        <Link to="/shopping/cart"><FaShoppingCart className="cart"/></Link>
        
         </div>
     </div>
