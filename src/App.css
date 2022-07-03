@@ -55,6 +55,22 @@ margin-right:15px;
 color: #000;
 font-size:20px
 }
+/*sub navbar*/
+.sub-navabr{
+  background-color: #F5F5F5;
+  padding: 20px;
+  display: flex;
+  justify-content:center
+}
+.sub-navabr a{
+  padding-left:30px;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 1.2;
+  display: flex;
+  justify-content:space-around;
+  color: #2C2B2D;
+}
 /* Header*/
 .subheader-conatiner{
   display: flex;

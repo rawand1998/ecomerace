@@ -4,6 +4,7 @@ import firebase from "../firebase";
 import { getDocs, collection } from "firebase/firestore";
 import { useNavigate } from "react-router-dom";
 import Header from "./Header";
+import NavBar from "./NavBar";
 function ProductsPage() {
   const [productsList, setProductsList] = useState([]);
   const [selected, setSelected] = useState("clothes");
@@ -30,7 +31,34 @@ function ProductsPage() {
   };
 
   return (
-    <div className="products-firestore">
+    <div>
+        <NavBar />
+      <div className="sub-navabr">
+     <a>new in</a> 
+<a>summer fits</a>
+<a>going out</a>
+<a>dresses</a>
+<a>occasion</a>
+<a>tops</a>
+<a>trousers</a>
+<a>clothing</a>
+<a>
+shop by body fit</a>
+<a>shoes</a>
+<a>mg kids</a>
+<a>
+homeware</a>
+<a>sale</a>
+
+
+
+
+
+
+
+
+
+      </div>
       <select onChange={(e) => setSelected(e.target.value)} value={selected}>
         
         <option value="clothes">clothes</option>
