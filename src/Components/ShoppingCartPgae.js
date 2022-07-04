@@ -4,7 +4,7 @@ import firebase from "../firebase";
 import { getDocs, collection } from "firebase/firestore";
 import NavBar from "./NavBar";
 import SubNavBar from "./SubNavBar";
-import { FaTrashAlt } from 'react-icons/fa';
+import { FaTrashAlt } from "react-icons/fa";
 function ShoppingCartPgae() {
   const [productInCart, setProductInCart] = useState([]);
   const db = firebase.firestore();
@@ -20,9 +20,8 @@ function ShoppingCartPgae() {
     getProductsInCart();
   }, []);
 
-  const deleteproduct =  (id) => {
-   
-     db.collection("cart").doc(id).delete()
+  const deleteproduct = (id) => {
+    db.collection("cart").doc(id).delete();
   };
   return (
     <div>
@@ -30,24 +29,23 @@ function ShoppingCartPgae() {
         <NavBar />
         <SubNavBar />
       </div>
-      <div></div>
-      {productInCart.map((product) => {
-        return (
-          <div className="shope-container">
-          <div key={product.id} className="cart-item">
-            <h3>{product.productName}</h3>
-
-            <p className="price">{product.price}</p>
-            <br />
-            <p className="amount">{product.amount}</p>
-
-            <button onClick={() => deleteproduct(product.id)} className="delete-btn">
-              <FaTrashAlt />
-            </button>
-          </div>
-          </div>
-        );
-      })}
+      <div className="shop-conatiner">
+        <h1 className="shop-title">Shopping Cart</h1>
+        <div className="shop-label">
+          <p>product Name</p>
+          <p>price</p>
+          <p>Amount</p>
+        </div>
+        {productInCart.map((product) => {
+          return (
+            <div className="shop-item">
+              <p className="shop-item-name">{product.productName}</p>
+              <p className="shop-item-price">{product.price}$</p>
+              <p>{product.amount}</p>
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 }
