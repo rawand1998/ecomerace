@@ -5,12 +5,13 @@ import Product from './Product';
 import Testimonal from './Testimonal';
 import NewsLetter from './NewsLetter';
 import Footer from './Footer';
+import Header from './Header';
 
 function Home() {
   return (
     <div>
        
-   
+   <Header />
     <About />
     <Product />
     <Testimonal />

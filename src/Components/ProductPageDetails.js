@@ -3,6 +3,9 @@ import { useParams } from "react-router-dom";
 
 import firebase from "../firebase";
 import { getDocs, collection, query, doc,addDoc } from "firebase/firestore";
+import NavBar from "./NavBar";
+import SubNavBar from "./SubNavBar";
+import Footer from "./Footer";
 function ProductPageDetails() {
   const db = firebase.firestore();
   const param = useParams();
@@ -37,6 +40,8 @@ function ProductPageDetails() {
     }
   return (
     <div className="details">
+      <NavBar />
+      <SubNavBar />
     <div className="product-details">
       <img src={product.productImg} />
       <div className="product-details-description">
@@ -59,7 +64,7 @@ function ProductPageDetails() {
     
      
     </div>
-  
+  <Footer />
     </div>
   );
 }
