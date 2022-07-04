@@ -700,3 +700,8 @@ width:50px;
   padding: 5px;
   border-radius: 50%;
 }
+.err-msg{
+  color: #fff;
+  padding-left: 15px;
+  font-weight: bold;
+}
