@@ -19,7 +19,7 @@ function NavBar() {
         <div className="list">
         <Link to="/" className="product-navbar">HOME</Link>
             <Link to="/products" className="product-navbar">PRODUCTS</Link>
-            <a>Login</a>
+            <Link to="/login" className="product-navbar">LOGIN</Link>
             <a>Support</a>
         </div>
         <div className="navBar-icon">
