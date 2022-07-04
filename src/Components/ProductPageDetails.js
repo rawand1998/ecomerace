@@ -47,7 +47,7 @@ function ProductPageDetails() {
   return (
     <div className="details">
       <NavBar />
-      <SubNavBar />
+      {/* <SubNavBar /> */}
     <div className="product-details">
       <img src={product.productImg} />
       <div className="product-details-description">

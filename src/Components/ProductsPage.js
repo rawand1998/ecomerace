@@ -35,7 +35,7 @@ function ProductsPage() {
   return (
     <div>
       <NavBar />
-<SubNavBar />
+{/* <SubNavBar /> */}
        <StaticData />
        <p className="category-label">Category Filter:</p>
        <div className="selected">
