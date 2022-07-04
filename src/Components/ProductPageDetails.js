@@ -7,6 +7,8 @@ import { getDocs, collection, query, doc,addDoc } from "firebase/firestore";
 import NavBar from "./NavBar";
 import SubNavBar from "./SubNavBar";
 import Footer from "./Footer";
+import { auth } from "../firebase";
+import {checkLogin} from '../hooks'
 function ProductPageDetails() {
   const db = firebase.firestore();
   const param = useParams();
@@ -32,12 +34,20 @@ function ProductPageDetails() {
       .update({ amount: productAmount +1, price:price * (++productAmount)})
     }
     const shoppineCart = (productName,productAmount,productPrice)=>{
-        
-        db.collection("cart").doc(param.id).set({
+      auth.onAuthStateChanged((user) => {
+        if (user) {
+         
+         db.collection("cart").doc(param.id).set({
             productName:productName,
             amount:productAmount,
             price:productPrice
         })
+       
+        }else{
+          console.log("erro")
+        }
+      });
+      
     }
     const decreaAmount =(productAmount,price)=>{
       db.collection("products")
@@ -47,7 +57,7 @@ function ProductPageDetails() {
   return (
     <div className="details">
       <NavBar />
-      <SubNavBar />
+      {/* <SubNavBar /> */}
     <div className="product-details">
       <img src={product.productImg} />
       <div className="product-details-description">
