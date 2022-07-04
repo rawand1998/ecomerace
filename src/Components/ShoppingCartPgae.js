@@ -7,6 +7,8 @@ import SubNavBar from "./SubNavBar";
 import { FaTrashAlt } from "react-icons/fa";
 function ShoppingCartPgae() {
   const [productInCart, setProductInCart] = useState([]);
+  const [price, setprice] = useState(0);
+
   const db = firebase.firestore();
   const cartRef = collection(db, "cart");
   useEffect(() => {
@@ -15,7 +17,7 @@ function ShoppingCartPgae() {
       setProductInCart(
         data.docs.map((item) => ({ ...item.data(), id: item.id }))
       );
-      //   setProductInCart(data.docs.map((item)=>console.log(item.data())));
+   
     };
     getProductsInCart();
   }, []);
@@ -42,9 +44,13 @@ function ShoppingCartPgae() {
               <p className="shop-item-name">{product.productName}</p>
               <p className="shop-item-price">{product.price}$</p>
               <p>{product.amount}</p>
+            
             </div>
+                  
           );
+
         })}
+   
       </div>
     </div>
   );
