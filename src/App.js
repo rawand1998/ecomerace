@@ -7,6 +7,8 @@ import ProductPageDetails from './Components/ProductPageDetails';
 import ShoppingCartPgae from './Components/ShoppingCartPgae';
 import {BrowserRouter as Router , Routes,Route,Link} from 'react-router-dom'
 import Header from './Components/Header';
+import Register from './Components/Auth/Register';
+import Login from './Components/Auth/Login';
 function App() {
   return (
     <div>
@@ -18,7 +20,8 @@ function App() {
       <Route path="/products" element={<ProductsPage />}/>
       <Route path="/products/:id" element={<ProductPageDetails />}/>
       <Route path="/shopping/cart" element={<ShoppingCartPgae />}/>
-
+      <Route path="/register" element={<Register />}/>
+      <Route path="/login" element={<Login />}/>
     </Routes>
    </Router>
    </div>
