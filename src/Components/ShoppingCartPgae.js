@@ -4,10 +4,10 @@ import firebase from "../firebase";
 import { getDocs, collection } from "firebase/firestore";
 import NavBar from "./NavBar";
 import SubNavBar from "./SubNavBar";
-import { FaTrashAlt } from "react-icons/fa";
+
 function ShoppingCartPgae() {
   const [productInCart, setProductInCart] = useState([]);
-  const [price, setprice] = useState(0);
+ 
 
   const db = firebase.firestore();
   const cartRef = collection(db, "cart");
@@ -17,14 +17,21 @@ function ShoppingCartPgae() {
       setProductInCart(
         data.docs.map((item) => ({ ...item.data(), id: item.id }))
       );
-   
+      
     };
+  
     getProductsInCart();
   }, []);
-
+  const increaAmount = async(id,productAmount,price)=>{
+    console.log(id,productAmount,price)
+   await db.collection("cart")
+    .doc('6JV0MkH3tVlMzLO75omc')
+ .update({ amount: productAmount +1, price:price * (++productAmount)})
+   }
   const deleteproduct = (id) => {
     db.collection("cart").doc(id).delete();
   };
+  
   return (
     <div>
       <div>
@@ -40,10 +47,13 @@ function ShoppingCartPgae() {
         </div>
         {productInCart.map((product) => {
           return (
-            <div className="shop-item">
+            <div className="shop-item" key={product.id}>
               <p className="shop-item-name">{product.productName}</p>
               <p className="shop-item-price">{product.price}$</p>
-              <p>{product.amount}</p>
+              <p>{product.amount} 
+              
+              
+              </p>
             
             </div>
                   
