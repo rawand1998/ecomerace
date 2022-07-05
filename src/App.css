@@ -278,13 +278,14 @@ sup {
 .product-container {
   padding-top: 60px;
   display: flex;
+  flex-direction: column;
   background-color: #fef4e8;
   height: 300px;
   margin-top: 5%;
 }
 .product-description {
   /* width: 50%; */
-  padding-left: 250px;
+  padding-left: 20px;
 }
 .product-description h2 {
   font-size: 34px;
@@ -292,6 +293,16 @@ sup {
   color: #292621;
   margin-bottom: 40px;
   text-align: center;
+}
+.product-image{
+  margin-left: 45%;
+  display:flex
+}
+.product-image span{
+  padding-top:25px;
+  padding-left: 15px;
+  color: #ff2020;
+  font-weight: bold;
 }
 .product-description p {
   line-height: 1.5;
