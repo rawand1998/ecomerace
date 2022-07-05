@@ -6,6 +6,8 @@ import Testimonal from './Testimonal';
 import NewsLetter from './NewsLetter';
 import Footer from './Footer';
 import Header from './Header';
+import TrendingProduct from './TrendingProduct';
+import MayLike from './MayLike';
 
 function Home() {
   return (
@@ -13,8 +15,10 @@ function Home() {
        
    <Header />
     <About />
+    <TrendingProduct />
     <Product />
-    <Testimonal />
+    {/* <Testimonal /> */}
+    <MayLike />
     <NewsLetter />
     <Footer />
     </div>
