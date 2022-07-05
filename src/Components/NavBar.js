@@ -15,7 +15,7 @@ function NavBar() {
   })
   return (
     <div className="nav-container">
-        <div className="logo"><h2>Bensike</h2></div>
+        <div className="logo"><h2>Captial Shop</h2></div>
         <div className="list">
         <Link to="/" className="product-navbar">HOME</Link>
             <Link to="/products" className="product-navbar">PRODUCTS</Link>

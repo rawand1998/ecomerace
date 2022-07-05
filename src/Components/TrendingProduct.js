@@ -6,7 +6,7 @@ function TrendingProduct() {
         <div className="trend-nav">
             <h2>Trending This Week</h2>
             <div className="trend-menu">
-                <a>Woman</a>
+                <a className="woman">Woman</a>
                 <a>Men</a>
                 <a>Baby</a>
                 <a>Fashion</a>

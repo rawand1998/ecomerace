@@ -23,7 +23,7 @@ const Login = () => {
         </div>
         <div className="login-box">
           <div className="single-input-feilds">
-            <label for="">Username or Email Address</label>
+            <label for="">Email Address</label>
             <input  value={email}  placeholder="Email Address"
           onChange={(e) => setEmail(e.target.value)} />
           </div>
