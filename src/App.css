@@ -234,92 +234,59 @@ width: 500px;
 /*About*/
 .about-container{
   padding-top:50px;
-
-}
-.three-about-section{
-  display:flex;
-  justify-content:space-around;
-  align-items:center;
-  padding-top: 35px;
-}
-.about-description{
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  
-}
-.about-description span{
-  color: #dddd;
-  font-weight:500;
-  font-size: 14px;
-}
-.about-description p{
-  color: #10101D;
-  font-size: 35px;
-  padding-top: 15px;
-}
-.about-section{
-  display: flex;
-  flex-direction: column;
-}
-.about-section-img .img1{
-   display: flex;
-}
-.about-section-img .img1 img{
-  width: 20px;
-  height: 20px;
-  border-radius:50%;
-  border: 1px solid #ddd;
-}
-.about-section-img .img1 p{
-  padding-left: 5px;
-}
-.about-section-img .img2{
-  display: flex;
-}
-.about-section-img .img2 p{
-  background-color: #EBF8FF;
-  border-radius: 15px;
-  color: #78D1EB;
-  padding:10px;
-  font-weight: bold;
-  margin-top: 10px;
-}
-.empty-div{
-  width: 20px;
-  height: 20px;
-  border-radius:50%;
-  background-color:#38BCF4;
-  margin-left: 5px;
-}
-.about-section-desc .title{
-  color: #10101D;
-  font-size:18px;
-  padding-top: 20px;
-  font-weight: bold;
- padding-left: 15px;
- padding-bottom: 20px;
-}
-.about-section-desc .title1{
-  color: #10101D;
-  font-size:18px;
-  padding-top: 2px;
-  font-weight: bold;
- padding-left: 15px;
- padding-bottom: 20px;
-}
-.about-section-desc .title-description{
-  color: #B3B4B6;
-  font-size:16px;
-  line-height:1.5;
-  font-weight: bold;
-}
-.img4{
-  height:100px;
-  width:143px;
+  /* justify-content:center; */
+  justify-content:space-evenly;
+  width:80%;
+       /* background-color: #ff0;  */
+   margin-left: 10%;
+  margin-right: 10%; 
+ 
 }
 
+.fashion{
+
+  width: 30.66%;
+  background-image: url('https://preview.colorlib.com/theme/capitalshop/assets/img/gallery/xitems1.jpg.pagespeed.ic.oEs2Is3V_r.webp');
+ 
+}
+.fashion-woman{
+  width: 30.66%;
+  background-image: url('https://preview.colorlib.com/theme/capitalshop/assets/img/gallery/xitems2.jpg.pagespeed.ic.rorSvQkHIK.webp');
+}
+.fashion-girl{
+  width: 30.66%;
+  background-image: url('https://preview.colorlib.com/theme/capitalshop/assets/img/gallery/xitems3.jpg.pagespeed.ic.oIlAW2CB1j.webp')
+}
+.fashion img{
+  width: 100%;
+  position: relative;
+
+}
+
+.fashion-details{
+  transition: all .4s ease-out 0s;
+text-align: center;
+
+margin-top:80%;
+  background-color: #F4F9FF;
+  opacity: 0.7;
+  padding: 20px;
+ 
+ 
+}
+.fashion-details h4{
+  font-family: "Jost",sans-serif;
+  color: #000000;
+  margin-top: 0;
+  font-style: normal;
+  font-weight: 500;
+}
+.fashion-details a{
+  transition: all .4s ease-out 0s;
+  opacity: 0;
+  visibility: hidden;
+}
 /* product section*/
 .product-container{
   padding-top:60px;
