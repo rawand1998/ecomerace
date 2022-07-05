@@ -1,16 +1,23 @@
 import React, { useState } from "react";
 import firebase from "../../firebase";
 import { login } from "../../hooks";
+import { checkEmail } from "../../hooks";
 import { useNavigate } from "react-router-dom";
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   let navigate = useNavigate();
-  const Login = (e) => {
-    e.preventDefault();
-
-    login(email, password);
-    navigate('/')
+  const Login =async (e) => {
+    try{
+      
+      e.preventDefault();
+        
+      login(email, password);
+      navigate('/')
+    }catch(err){
+      console.log(err);
+    }
+  
   };
   return (
     <div>
