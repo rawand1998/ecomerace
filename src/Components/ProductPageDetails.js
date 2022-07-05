@@ -14,6 +14,7 @@ function ProductPageDetails() {
   const param = useParams();
 
   const [product, setProduct] = useState([]);
+  const[Msg,setMsg]=useState("")
  
   useEffect(() => {
     const getproductDetails = async () => {
@@ -33,22 +34,20 @@ function ProductPageDetails() {
       .doc(param.id)
       .update({ amount: productAmount +1, price:price * (++productAmount)})
     }
-    const shoppineCart = (productName,productAmount,productPrice)=>{
+    const shoppineCart = (productName, productAmount, productPrice) => {
       auth.onAuthStateChanged((user) => {
         if (user) {
-         
-         db.collection("cart").doc(param.id).set({
-            productName:productName,
-            amount:productAmount,
-            price:productPrice
-        })
-       
-        }else{
-          console.log("erro")
+          db.collection("cart").doc(param.id).set({
+            productName: productName,
+            amount: productAmount,
+            price: productPrice,
+          });
+        } else {
+          setMsg("You Should To Be Login!");
+          
         }
       });
-      
-    }
+    };
     const decreaAmount =(productAmount,price)=>{
       db.collection("products")
       .doc(param.id)
@@ -76,8 +75,10 @@ function ProductPageDetails() {
        <FaMinus onClick={() => decreaAmount(product.amount,product.price)} className="amount-dec"/>
        </div>
       </p>
-     
+   
       <button className="btn-details" onClick={()=>shoppineCart(product.prorductName,product.amount, product.price)}>Add to cart</button>
+   
+      {Msg &&<p className="error">{Msg}</p>}
       </div>
     
      

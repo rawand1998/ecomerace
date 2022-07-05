@@ -610,7 +610,7 @@ sup {
   color: #000000;
   border: none;
   margin-top: 15px;
-  width: 50%;
+  width: 100%;
   border: 1px solid #ddd;
 }
 .btn-amount {
@@ -837,4 +837,14 @@ sup {
   font-size: 14px;
   font-weight: 400;
  
+}
+.error{
+  color: #fff;
+
+  opacity:0.8;
+  margin-right:50%;
+  margin-top:15px;
+  padding-left:35%;
+  padding-top:5px;
+  padding-bottom:5px
 }
