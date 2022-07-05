@@ -20,7 +20,7 @@ body {
   color: #000;
   font-weight: bold;
   font-size: 12px;
-  padding-left: 15px;
+  padding-left: 50px;
   display: flex;
   align-items: center;
 }
@@ -30,7 +30,7 @@ body {
 }
 .list a {
   padding: 20px 20px;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 600;
 }
 .product-navbar {
@@ -260,13 +260,14 @@ sup {
   background-color: #f4f9ff;
   opacity: 0.7;
   padding: 20px;
+ font-weight: bold;
 }
 .fashion-details h4 {
   font-family: "Jost", sans-serif;
   color: #000000;
   margin-top: 0;
   font-style: normal;
-  font-weight: 500;
+  font-weight: bold;
 }
 .fashion-details a {
   transition: all 0.4s ease-out 0s;
@@ -277,13 +278,14 @@ sup {
 .product-container {
   padding-top: 60px;
   display: flex;
+  flex-direction: column;
   background-color: #fef4e8;
   height: 300px;
   margin-top: 5%;
 }
 .product-description {
   /* width: 50%; */
-  padding-left: 250px;
+  padding-left: 20px;
 }
 .product-description h2 {
   font-size: 34px;
@@ -291,6 +293,16 @@ sup {
   color: #292621;
   margin-bottom: 40px;
   text-align: center;
+}
+.product-image{
+  margin-left: 45%;
+  display:flex
+}
+.product-image span{
+  padding-top:25px;
+  padding-left: 15px;
+  color: #ff2020;
+  font-weight: bold;
 }
 .product-description p {
   line-height: 1.5;
@@ -357,7 +369,7 @@ sup {
 .newsletter-container {
   display: flex;
   justify-content: space-around;
-  background-color: #fff6cd;
+  background-color: #FEF4E8;
 
   padding-top: 50px;
   height: 300px;
@@ -388,9 +400,9 @@ sup {
 }
 .newsletter-massage {
   height: 280px;
-  background-color: #ffd72f;
+  background-color: #FFF9FC;
   border-radius: 15px;
-  padding-top: 15px;
+  padding-top: 0px;
   width: 35%;
 }
 .newsletter-massage .first-msg {
@@ -665,7 +677,11 @@ sup {
   border-bottom: 1px solid #ddd;
   padding-bottom: 50px;
 }
+.woman{
+  color: #ff2020;
+  font-weight: bold;
 
+}
 .trend-menu{
 
   margin-left: 55%;
@@ -712,5 +728,113 @@ sup {
   margin-left: 10%;
   margin-right: 10%;
  
+ 
+}
+
+.login-pg{
+  height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url(https://preview.colorlib.com/theme/capitalshop/assets/img/hero/h1_hero.jpg);
+}
+.login-form-area{
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 15px 0;
+}
+.login-form{
+  background: #fff;
+  padding: 55px 60px 50px 50px;
+  box-shadow: 0 10px 30px 0 rgb(13 12 13 / 20%);
+  min-width: 700px;
+}
+.login-heading{
+  text-align: center;
+}
+.login-form-area .login-form .login-heading span {
+  color: #140c40;
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  display: block;
+  text-transform: capitalize;
+}
+.login-form-area .login-form .login-heading p{
+  font-family: "Jost",sans-serif;
+  color: #301a22;
+  font-size: 16px;
+  line-height: 30px;
+  margin-bottom: 15px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+.login-form-area .login-form .input-box {
+  padding-top: 35px;
+  padding-bottom: 75px;
+}
+.login-form-area .login-form .input-box .single-input-fields label {
+  display: block;
+  font-size: 17px;
+  margin-bottom: 6px;
+  color: #140c40;
+  text-transform: capitalize;
+  font-weight: 500;
+  text-align: left;
+}
+ .single-input-feilds input {
+  border: 1px solid #c9c9c9;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 20px;
+  padding: 0 25px;
+  color: #000;
+  background-color: #fff;
+}
+
+.submit-btn3 {
+  background: #ff2020;
+  height: 60px;
+  padding: 10px 43px;
+  border: 0;
+  color: #fff;
+  text-transform: capitalize;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 0;
+  margin-left: 80%;
+}
+
+
+.login-form-area .login-form .login-footer p {
+    margin: 0;
+}
+.login-footer p {
+    font-family: "Jost",sans-serif;
+    color: #301a22;
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 15px;
+    font-weight: 400;
+    line-height: 1.6;
+}
+.login-footer p a{
+  color: #ff2020;
+  font-size: 14px;
+  font-weight: 400;
  
 }
