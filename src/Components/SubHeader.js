@@ -4,13 +4,12 @@ function SubHeader() {
   return (
     <div className="subheader-conatiner">
         <div className="subheader-description">
-            <h1>Experts<br/> with <strong>Mega</strong> <br/> vision.</h1>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-            <button>Explore Now</button>
+          <span>Fashion Sale</span>
+            <h1>Minimal Menz Style</h1>
+            <p>Consectetur adipisicing elit. Laborum fuga incidunt laboriosam voluptas iure, delectus dignissimos facilis neque nulla earum.</p>
+            <a>Shop Now</a>
         </div>
-        <div className="subheader-image">
-          <img src="../../assets/header.png" />
-        </div>
+       
     </div>
   )
 }
