@@ -6,18 +6,11 @@ import { useNavigate } from "react-router-dom";
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [msg, setMsg] = useState("");
   let navigate = useNavigate();
-  const Login =async (e) => {
-    try{
-      
-      e.preventDefault();
-        
-      login(email, password);
-      navigate('/')
-    }catch(err){
-      console.log(err);
-    }
-  
+  const Login = async (e) => {
+    login(email, password);
+    navigate("/");
   };
   return (
     <div>
@@ -36,6 +29,7 @@ const Login = () => {
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
+        <p>{msg}</p>
         <button onClick={Login}>Send</button>
       </form>
     </div>

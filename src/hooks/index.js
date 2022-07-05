@@ -19,11 +19,15 @@ export const register = (name, email, password) => {
   });
 };
 export const login = async (email, password) => {
-  await signInWithEmailAndPassword(auth, email, password);
+ 
+    await signInWithEmailAndPassword(auth, email, password);
+ 
+ 
 };
 
-export const checkEmail=(email)=> {
-  return this.firebase
-    .collection('profile', (ref) => ref.where('email', '==', email))
+export const checkEmail=async (email)=> {
+  const check= this.firebase
+    .collection('name', (ref) => ref.where('email', '==', email))
     .get();
+    console.log(check)
 }
