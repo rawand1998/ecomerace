@@ -292,20 +292,32 @@ margin-top:80%;
   padding-top:60px;
   display:flex;
   background-color: #FEF4E8;
-  height:400px;
+  height:300px;
   margin-top:5%
 }
 .product-description{
- width: 50%;
- padding-left:100px
+ /* width: 50%; */
+ padding-left:250px
 }
-.product-description span{
-  font-size:14px;
-  font-weight:bold;
-  color :#B3B4B6
+.product-description h2{
+  font-size: 34px;
+  font-weight: 500;
+  color: #292621;
+  margin-bottom: 40px;
+  text-align: center;
 
 }
-.product-description .product-title{
+.product-description p {
+  line-height: 1.5;
+  padding: 0 200px;
+  margin-bottom: 32px;
+  text-align: center;
+  font-size: 18px;
+  color: #292621;
+  font-weight: 400;
+  font-family: "Jost",sans-serif;
+}
+/* .product-description .product-title{
   font-size:35px;
   padding-top:15px;
   font-weight:bold;
@@ -314,12 +326,8 @@ margin-top:80%;
   padding-top:15px;
   line-height:1.8;
   color: #9A9188;
-}
-.product-description .product-explore{
-  padding-top:50px;
-  color: #10101D;
-  font-weight:bold;
-}
+} */
+
 
 /* testimonal */
 

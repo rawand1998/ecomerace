@@ -34,9 +34,9 @@ function ProductsPage() {
 
   return (
     <div>
-      <NavBar />
+      {/* <NavBar /> */}
 {/* <SubNavBar /> */}
-       <StaticData />
+       {/* <StaticData /> */}
        <p className="category-label">Category Filter:</p>
        <div className="selected">
       <select onChange={(e) => setSelected(e.target.value)} value={selected} className="selected-input" >

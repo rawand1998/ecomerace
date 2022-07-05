@@ -4,10 +4,9 @@ function Product() {
   return (
     <div className="product-container">
         <div className="product-description">
-            <span>PRODUCTS</span>
-            <p className="product-title">Shopping the way<br /> you like it.</p>
-            <p className="product-title-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br />Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,<br/>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-            <p className="product-explore">Explore Now</p>
+            <h2>Customer Testimonial</h2>
+            <p className="product-title">Everybody is different, which is why we offer styles for every body.<br/> Laborum fuga incidunt laboriosam <br/>voluptas iure, delectus dignissimos facilis neque nulla earum..</p>
+           
         </div>
         <div className="product-image"></div>
     </div>

@@ -3,7 +3,7 @@ import React from 'react'
 function Testimonal() {
   return (
     <div className="testional-container">
-        <div className="testional-image"></div>
+       
         <div className="testional-description">
             <span>Testional</span>
             <p className="testional-title">We are loyal with<br /> our customer.</p>
