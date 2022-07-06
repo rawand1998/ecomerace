@@ -21,6 +21,8 @@ export const register = (name, email, password) => {
 export const login = async (email, password) => {
   await signInWithEmailAndPassword(auth, email, password);
 };
-export const checkLogin = () => {
+
+export const signOut = async() => {
+ await firebase.auth().signOut();
 
 };

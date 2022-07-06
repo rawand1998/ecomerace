@@ -38,6 +38,7 @@ function ProductPageDetails() {
     const shoppineCart = (productName, productAmount, productPrice) => {
       auth.onAuthStateChanged((user) => {
         if (user) {
+      
           db.collection("cart").doc(param.id).set({
             productName: productName,
             amount: productAmount,
