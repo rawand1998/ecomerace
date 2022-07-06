@@ -14,6 +14,7 @@ function ProductPageDetails() {
   const param = useParams();
 
   const [product, setProduct] = useState([]);
+ 
   const[Msg,setMsg]=useState("")
  
   useEffect(() => {
@@ -37,6 +38,7 @@ function ProductPageDetails() {
     const shoppineCart = (productName, productAmount, productPrice) => {
       auth.onAuthStateChanged((user) => {
         if (user) {
+      
           db.collection("cart").doc(param.id).set({
             productName: productName,
             amount: productAmount,
