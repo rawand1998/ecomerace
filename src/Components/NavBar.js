@@ -3,9 +3,10 @@ import { FaSearch } from "react-icons/fa";
 import { FaShoppingCart } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { auth } from "../firebase";
+import {signOut} from '../hooks'
 import firebase, { db } from "../firebase";
 import { getDocs, collection, query, doc, addDoc } from "firebase/firestore";
-import {logout} from '../hooks'
+
 function NavBar() {
   
   const [cartNo, setCartNo] = useState(0);
@@ -25,8 +26,8 @@ function NavBar() {
       }
     });
   });
-  const logout = async()=>{
-    logout()
+  const signOut = async()=>{
+    signOut()
   
   }
   return (
@@ -43,7 +44,7 @@ function NavBar() {
         </Link>
         {!userName ?<Link to="/login" className="product-navbar">
           LOGIN
-        </Link> :<Link to="/" className="product-navbar" onClick={logout}>Logout</Link>}
+        </Link> :<Link to="/" className="product-navbar" onClick={signOut}>Logout</Link>}
         
         <a>Support</a>
       </div>
