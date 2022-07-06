@@ -14,6 +14,7 @@ function ProductPageDetails() {
   const param = useParams();
 
   const [product, setProduct] = useState([]);
+  const [success,setSuccess]= useState('')
   const[Msg,setMsg]=useState("")
  
   useEffect(() => {
@@ -42,6 +43,7 @@ function ProductPageDetails() {
             amount: productAmount,
             price: productPrice,
           });
+          setSuccess("Product add to cart successfully");
         } else {
           setMsg("You Should To Be Login!");
           
@@ -77,7 +79,7 @@ function ProductPageDetails() {
       </p>
    
       <button className="btn-details" onClick={()=>shoppineCart(product.prorductName,product.amount, product.price)}>Add to cart</button>
-   
+           {success && <p className="success">{success}</p>}
       {Msg &&<p className="error">{Msg}</p>}
       </div>
     

@@ -52,9 +52,9 @@ function ProductsPage() {
             <div key={product.id} className="product">
               <img src={product.productImg} />
               <div className="pro">
-                <p>{product.prorductName}</p>
+                <p className="pro-name">{product.prorductName}</p>
 
-                <p>Price: {product.price}$</p>
+                <p className="pro-price">Price: {product.price}$</p>
                 <br />
                 {/* <span>Category: {product.category}</span> */}
                 <br />
