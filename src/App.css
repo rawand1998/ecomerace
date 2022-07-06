@@ -37,6 +37,9 @@ body {
   color: #000000;
   text-decoration: none;
 }
+.product-navbar:hover{
+  color:#ff2020
+}
 .navBar-icon {
   display: flex;
   align-items: center;
@@ -538,6 +541,9 @@ sup {
   box-shadow: 1px 1px 1px 1px #fff;
   margin-top: -20%;
 }
+.product button:hover{
+  background-color: #ddd
+}
 .selected {
   margin-left: 45%;
   width: 50px;
@@ -613,6 +619,9 @@ sup {
   width: 100%;
   border: 1px solid #ddd;
 }
+.btn-details:hover{
+  background-color: #ddd
+}
 .btn-amount {
   padding: 5px;
   background-color: #1688e3;
@@ -687,7 +696,11 @@ sup {
   margin-left: 55%;
 }
 .trend-menu a{
-  padding-left:15px
+  padding-left:15px;
+  cursor: pointer;
+}
+.trend-menu a:hover{
+  color: #ff2020;
 }
 .trend-img{
   display: flex;
