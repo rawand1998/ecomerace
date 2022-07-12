@@ -1,5 +1,5 @@
 import React from 'react'
-
+import './Style.css'
 function StaticData() {
   return (
     <div>
