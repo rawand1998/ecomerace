@@ -5,10 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 const Login = () => {
   const intialValues = { email: "", password: "" };
-
   const [formValues, setFormValues] = useState(intialValues);
-  // const [email, setEmail] = useState("");
-  // const [password, setPassword] = useState("");
   const [formErrors, setFormErrors] = useState({});
   const [isSubmitting, setIsSubmitting] = useState(false);
   const handleChange = (e) => {
