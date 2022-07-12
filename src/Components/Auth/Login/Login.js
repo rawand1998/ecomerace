@@ -45,7 +45,7 @@ const Login = () => {
     setFormErrors(validate(formValues));
     setIsSubmitting(true);
     login(formValues);
-    // navigate('/')
+    navigate('/')
   };
   return (
     <div className="login-pg">
