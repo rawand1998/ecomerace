@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 
-import firebase from "../firebase";
+import firebase from "../../firebase";
 import { getDocs, collection } from "firebase/firestore";
-import NavBar from "./NavBar/NavBar";
-import SubNavBar from "./SubNavBar";
-
+import NavBar from "../NavBar/NavBar";
+import SubNavBar from "../SubNavBar";
+import './Style.css';
 function ShoppingCartPgae() {
   const [productInCart, setProductInCart] = useState([]);
  

@@ -4,7 +4,7 @@ import './App.css';
 import ProductsPage from './Components/productPage/ProductsPage';
 import Home from './Components/Home';
 import ProductPageDetails from './Components/ProductPageDetails/ProductPageDetails';
-import ShoppingCartPgae from './Components/ShoppingCartPgae';
+import ShoppingCartPgae from './Components/ShoppingCartPage/ShoppingCartPgae';
 import {BrowserRouter as Router , Routes,Route,Link} from 'react-router-dom'
 import Header from './Components/Header';
 import Register from './Components/Auth/Register';
