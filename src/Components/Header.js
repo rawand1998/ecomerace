@@ -1,6 +1,6 @@
 import React from 'react'
 import NavBar from './NavBar/NavBar'
-import SubHeader from './SubHeader'
+import SubHeader from './SubHeader/SubHeader'
 function Header() {
   return (
     <div className="header-container">

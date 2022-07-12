@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import firebase from "../../firebase";
 // import { db } from "../firebase";
-import SubNavBar from "../SubNavBar";
+import SubNavBar from "../SubNavbar/SubNavBar";
 import { getDocs, collection } from "firebase/firestore";
 import { useNavigate } from "react-router-dom";
 import StaticData from "../StaticData/StaticData";
