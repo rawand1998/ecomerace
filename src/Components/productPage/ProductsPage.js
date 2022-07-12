@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from "react";
-import firebase from "../firebase";
+import firebase from "../../firebase";
 // import { db } from "../firebase";
-import SubNavBar from "./SubNavBar";
+import SubNavBar from "../SubNavBar";
 import { getDocs, collection } from "firebase/firestore";
 import { useNavigate } from "react-router-dom";
-import StaticData from "./StaticData";
-import NavBar from "./NavBar/NavBar";
-import Footer from "./Footer/Footer";
+import StaticData from "../StaticData";
+import NavBar from "../NavBar/NavBar";
+import Footer from "../Footer/Footer";
+import './Style.css'
 function ProductsPage() {
   const [productsList, setProductsList] = useState([]);
   const [selected, setSelected] = useState("clothes");

@@ -1,7 +1,7 @@
 
 import './App.css';
 
-import ProductsPage from './Components/ProductsPage';
+import ProductsPage from './Components/productPage/ProductsPage';
 import Home from './Components/Home';
 import ProductPageDetails from './Components/ProductPageDetails/ProductPageDetails';
 import ShoppingCartPgae from './Components/ShoppingCartPgae';
