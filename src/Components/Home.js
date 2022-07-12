@@ -6,7 +6,7 @@ import Testimonal from './Testimonal/Testimonal';
 import NewsLetter from './NewLetter/NewsLetter';
 import Footer from './Footer/Footer';
 import Header from './Header';
-import TrendingProduct from './TrendingProduct';
+import TrendingProduct from './TrendingProduct/TrendingProduct';
 import MayLike from './MayLike/MayLike';
 
 function Home() {
