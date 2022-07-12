@@ -389,53 +389,7 @@ sup {
 }
 
 /* footer */
-.footer-container {
-  display: flex;
-  background-color: #000000;
-  color: #fff;
-  justify-content: space-between;
-  padding-left: 100px;
-  padding-right: 100px;
-  height: 350px;
-  padding-top: 70px;
-  margin-top: 5%;
-}
-.footer-container .footer-title {
-  font-size: 25px;
-}
-.footer-container .footer-icon {
-  display: flex;
-  margin-top: 35px;
-}
-.icon {
-  background-color: #2d2b2c;
-  color: #fff;
-  padding: 5px;
-  border-radius: 5px;
-  margin-left: 15px;
-}
-.description-location {
-  font-size: 14px;
-  color: #6c6c6d;
-  padding-top: 35px;
-  line-height: 1.8;
-}
-.footer-description {
-  display: flex;
-  flex-direction: column;
-}
-.footer-list {
-  display: flex;
-  flex-direction: column;
-}
-.footer-list span {
-  font-weight: bold;
-  color: #464445;
-}
-.footer-list p {
-  color: #fff;
-  padding-top: 30px;
-}
+
 
 /*products page*/
 .products-firestore {

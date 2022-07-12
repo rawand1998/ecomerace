@@ -2,6 +2,7 @@ import React from "react";
 import { FaFacebookSquare } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
+import './Style.css';
 function Footer() {
   return (
     <div className="footer-container">

@@ -6,7 +6,7 @@ import firebase from "../firebase";
 import { getDocs, collection, query, doc,addDoc } from "firebase/firestore";
 import NavBar from "./NavBar";
 import SubNavBar from "./SubNavBar";
-import Footer from "./Footer";
+import Footer from "./Footer/Footer";
 import { auth } from "../firebase";
 import {checkLogin} from '../hooks'
 function ProductPageDetails() {
