@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import firebase from "../../firebase";
-import { login } from "../../hooks";
+import firebase from "../../../firebase";
+import { login } from "../../../hooks";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 const Login = () => {

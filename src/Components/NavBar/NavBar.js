@@ -2,11 +2,11 @@ import React, { useState, useEffect } from "react";
 import { FaSearch } from "react-icons/fa";
 import { FaShoppingCart } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import { auth } from "../firebase";
-import {signOut} from '../hooks'
-import firebase, { db } from "../firebase";
+import { auth } from "../../firebase";
+import {signOut} from '../../hooks'
+import firebase, { db } from "../../firebase";
 import { getDocs, collection, query, doc, addDoc } from "firebase/firestore";
-
+import './Style.css'
 function NavBar() {
   
   const [cartNo, setCartNo] = useState(0);

@@ -1,0 +1,69 @@
+.trend-nav {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 100px;
+  
+    width: 80%;
+  
+    margin-left: 10%;
+    margin-right: 10%;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 50px;
+  }
+  .woman{
+    color: #ff2020;
+    font-weight: bold;
+  
+  }
+  .trend-menu{
+  
+    margin-left: 55%;
+  }
+  .trend-menu a{
+    padding-left:15px;
+    cursor: pointer;
+  }
+  .trend-menu a:hover{
+    color: #ff2020;
+  }
+  .trend-img{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+  
+    width: 80%;
+  
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .trend-img1{
+    width:25%;
+    height:400px;
+    
+  }
+  .trend-img1 h3{
+    color: #292621;
+      font-size: 16px;
+      font-weight: 400;
+      margin-bottom: 6px;
+      text-align: center;
+      padding-top: 15px;
+  }
+  .trend-img1 span{
+    padding-top: 15px;
+    color: #74706b;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    margin-left: 45%;
+  }
+  .like-nav {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 100px;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+   
+   
+  }

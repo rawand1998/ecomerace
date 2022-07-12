@@ -2,13 +2,14 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { FaPlus } from "react-icons/fa";
 import { FaMinus } from "react-icons/fa";
-import firebase from "../firebase";
+import firebase from "../../firebase";
 import { getDocs, collection, query, doc,addDoc } from "firebase/firestore";
-import NavBar from "./NavBar";
-import SubNavBar from "./SubNavBar";
-import Footer from "./Footer";
-import { auth } from "../firebase";
-import {checkLogin} from '../hooks'
+import NavBar from "../NavBar/NavBar";
+
+import Footer from "../Footer/Footer";
+import { auth } from "../../firebase";
+import {checkLogin} from '../../hooks'
+import './Style.css'
 function ProductPageDetails() {
   const db = firebase.firestore();
   const param = useParams();

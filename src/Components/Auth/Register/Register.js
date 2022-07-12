@@ -1,8 +1,8 @@
 import React, { useState ,useContext} from "react";
-import firebase from "../../firebase";
-import { register } from "../../hooks";
+import firebase from "../../../firebase";
+import { register } from "../../../hooks";
 import { useNavigate } from "react-router-dom";
-
+import './Style.css'
 function Register() {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");

@@ -1,14 +1,14 @@
 
 import './App.css';
 
-import ProductsPage from './Components/ProductsPage';
-import Home from './Components/Home';
-import ProductPageDetails from './Components/ProductPageDetails';
-import ShoppingCartPgae from './Components/ShoppingCartPgae';
+import ProductsPage from './Components/productPage/ProductsPage';
+import Home from './Components/Home/Home';
+import ProductPageDetails from './Components/ProductPageDetails/ProductPageDetails';
+import ShoppingCartPgae from './Components/ShoppingCartPage/ShoppingCartPgae';
 import {BrowserRouter as Router , Routes,Route,Link} from 'react-router-dom'
-import Header from './Components/Header';
-import Register from './Components/Auth/Register';
-import Login from './Components/Auth/Login';
+
+import Register from './Components/Auth/Register/Register';
+import Login from './Components/Auth/Login/Login';
 function App() {
   return (
     <div>

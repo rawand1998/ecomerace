@@ -1,6 +1,6 @@
 import React from 'react'
-
-function Product() {
+import './Style.css'
+function Testimonal() {
   return (
     <div className="product-container">
         <div className="product-description">
@@ -17,4 +17,4 @@ function Product() {
   )
 }
 
-export default Product
+export default Testimonal
