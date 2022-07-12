@@ -5,7 +5,7 @@ import { FaMinus } from "react-icons/fa";
 import firebase from "../../firebase";
 import { getDocs, collection, query, doc,addDoc } from "firebase/firestore";
 import NavBar from "../NavBar/NavBar";
-import SubNavBar from "../SubNavbar/SubNavBar";
+
 import Footer from "../Footer/Footer";
 import { auth } from "../../firebase";
 import {checkLogin} from '../../hooks'

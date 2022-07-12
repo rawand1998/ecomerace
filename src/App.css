@@ -6,53 +6,9 @@
 body {
   background-color: rgb(252, 252, 252);
 }
-/* NavBar*/
 
-/*sub navbar*/
-.sub-navabr {
-  background-color: #f5f5f5;
-  padding: 20px;
-  display: flex;
-  justify-content: center;
-}
-.sub-navabr a {
-  padding-left: 30px;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 1.2;
-  display: flex;
-  justify-content: space-around;
-  color: #2c2b2d;
-}
-/*pink nav bar*/
-.pink-navbar {
-  display: flex;
-  justify-content: space-around;
-  background-color: #ffded9;
-  padding: 15px;
-}
-.pink-navbar .pink p {
-  padding-left: 15px;
-  padding-top: 5px;
-  font-weight: 400;
-  color: #000000;
-}
-.pink-navbar .pink2 p {
-  padding-left: 100px;
-  padding-top: 5px;
-  font-weight: 400;
-  color: #000000;
-}
-.pink-navbar .pink3 p {
-  padding-left: 50px;
-  padding-top: 5px;
-  font-weight: 400;
-  color: #000000;
-}
-.pink-navbar h3 {
-  font-size: 15px;
-}
-/* static-title*/
+
+
 
 .success
 {
@@ -60,7 +16,7 @@ body {
   padding-left: 30%;
 }
 
-/* Header*/
+
 
 
 
@@ -117,57 +73,6 @@ body {
 
 /* testimonal */
 
-.testional-container {
-  padding-top: 60px;
-  display: flex;
-
-  height: 400px;
-  margin-top: 5%;
-}
-.testional-description {
-  width: 50%;
-  padding-left: 100px;
-}
-.testional-description span {
-  font-size: 14px;
-  font-weight: bold;
-  color: #b3b4b6;
-}
-.testional-description .testional-title {
-  font-size: 35px;
-  padding-top: 15px;
-  font-weight: bold;
-}
-.testional-description .testional-title-description {
-  padding-top: 15px;
-  line-height: 1.8;
-  color: #8e9196;
-}
-.testional-description button {
-  background-color: #1688e3;
-  border: none;
-  border-radius: 10px;
-  color: #fff;
-  font-size: 18px;
-  font-weight: bold;
-  width: 25%;
-  padding: 10px 20px;
-  margin-top: 12px;
-}
-
-/* new letter section*/
-
-
-/* footer */
-
-
-
-/*product details page*/
-
-
-/* shopping page*/
-
-/* */
 
 .login-pg{
   height: 100vh;
