@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import firebase from "../../firebase";
 import { getDocs, collection } from "firebase/firestore";
 import NavBar from "../NavBar/NavBar";
-// import SubNavBar from "../SubNavbar/SubNavBar";
+import { FaTrashAlt } from 'react-icons/fa';
 import './Style.css';
 function ShoppingCartPgae() {
   const [productInCart, setProductInCart] = useState([]);
@@ -22,14 +22,10 @@ function ShoppingCartPgae() {
   
     getProductsInCart();
   }, []);
-  const increaAmount = async(id,productAmount,price)=>{
-    console.log(id,productAmount,price)
-   await db.collection("cart")
-    .doc('6JV0MkH3tVlMzLO75omc')
- .update({ amount: productAmount +1, price:price * (++productAmount)})
-   }
-  const deleteproduct = (id) => {
-    db.collection("cart").doc(id).delete();
+ 
+  const deleteproduct = async(id) => {
+   
+   await db.collection("cart").doc(id).delete();
   };
   
   return (
@@ -50,10 +46,10 @@ function ShoppingCartPgae() {
             <div className="shop-item" key={product.id}>
               <p className="shop-item-name">{product.productName}</p>
               <p className="shop-item-price">{product.price}$</p>
-              <p>{product.amount} 
-              
-              
-              </p>
+              <p>{product.amount} </p>
+              <a onClick={deleteproduct(product.id)}>
+          <FaTrashAlt/>
+              </a>
             
             </div>
                   
