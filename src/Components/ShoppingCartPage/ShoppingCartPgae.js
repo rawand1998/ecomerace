@@ -23,10 +23,7 @@ function ShoppingCartPgae() {
     getProductsInCart();
   }, []);
  
-  const deleteproduct = async(id) => {
-   
-   await db.collection("cart").doc(id).delete();
-  };
+
   
   return (
     <div>
@@ -47,9 +44,7 @@ function ShoppingCartPgae() {
               <p className="shop-item-name">{product.productName}</p>
               <p className="shop-item-price">{product.price}$</p>
               <p>{product.amount} </p>
-              <a onClick={deleteproduct(product.id)}>
-          <FaTrashAlt/>
-              </a>
+          
             
             </div>
                   
