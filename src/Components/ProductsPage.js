@@ -5,7 +5,7 @@ import SubNavBar from "./SubNavBar";
 import { getDocs, collection } from "firebase/firestore";
 import { useNavigate } from "react-router-dom";
 import StaticData from "./StaticData";
-import NavBar from "./NavBar";
+import NavBar from "./NavBar/NavBar";
 import Footer from "./Footer/Footer";
 function ProductsPage() {
   const [productsList, setProductsList] = useState([]);
