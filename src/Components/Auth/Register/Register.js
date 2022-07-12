@@ -1,17 +1,50 @@
-import React, { useState ,useContext} from "react";
+import React, { useState ,useEffect} from "react";
 import firebase from "../../../firebase";
 import { register } from "../../../hooks";
 import { useNavigate } from "react-router-dom";
 import './Style.css'
 function Register() {
-    const [email, setEmail] = useState("");
-    const [password, setPassword] = useState("");
-    const [name, setName] = useState("");
-    let navigate = useNavigate();
+  const intialValues = { name:"",email: "", password: "" };
+  const [formValues, setFormValues] = useState(intialValues);
+  const [formErrors, setFormErrors] = useState({});
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormValues({ ...formValues, [name]: value });
+  };
+  let navigate = useNavigate();
+  const validate = (values) => {
+    let errors = {};
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
+
+    if (!values.email) {
+      errors.email = "Cannot be blank";
+    } else if (!regex.test(values.email)) {
+      errors.email = "Invalid email format";
+    }
+
+    if (!values.password) {
+      errors.password = "Cannot be blank";
+    } else if (values.password.length < 4) {
+      errors.password = "Password must be more than 4 characters";
+    }
+    if (!values.name) {
+      errors.name = "Cannot be blank";
+    }
+
+    return errors;
+  };
+
+  useEffect(() => {
+    if (Object.keys(formErrors).length === 0 && isSubmitting) {
+      Register();
+    }
+  }, [formErrors]);
     const Register = (e) => {
         e.preventDefault();
-    
-        register(name, email, password);
+        setFormErrors(validate(formValues));
+        setIsSubmitting(true);
+        register(formValues);
         navigate('/')
       };
       return (
@@ -26,27 +59,37 @@ function Register() {
         <div className="login-box">
         <div className="single-input-feilds">
             <label for="">Username </label>
-            <input  value={name}  placeholder="Email Address"
-          onChange={(e) => setName(e.target.value)} />
+            <input  value={formValues.name}  placeholder="Email Address"  name="name"
+          onChange={handleChange} />
+            {formErrors.email && (
+            <p className="error">{formErrors.name}</p>
+          )}
           </div>
           <div className="single-input-feilds">
             <label for="">Email Address</label>
-            <input  value={email}  placeholder="Email Address"
-          onChange={(e) => setEmail(e.target.value)} />
+            <input  value={formValues.email}  placeholder="Email Address" name="email"
+          onChange={handleChange} />
+            {formErrors.email && (
+            <p className="error">{formErrors.email}</p>
+          )}
           </div>
           <div  className="single-input-feilds">
           <label>Password</label>
         <input
           type="password"
           placeholder="Email Address"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
+          value={formValues.password}
+          onChange={handleChange}
+          name="password"
         />
+          {formErrors.email && (
+            <p className="error">{formErrors.password}</p>
+          )}
           </div>
          
         </div>
         <div className="login-footer">
-          {/* <p> Don’t have an account? <Link to="/register">Sign Up</Link></p> */}
+      
           <button className="submit-btn3" onClick={Register}>Register </button>
         </div>
       </div>
