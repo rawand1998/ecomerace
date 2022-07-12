@@ -1,8 +1,8 @@
 import React from 'react'
 
 import About from './About/About';
-import Product from './Product';
-import Testimonal from './Testimonal';
+import Product from './Testimonal/Testimonal';
+import Testimonal from './Testimonal/Testimonal';
 import NewsLetter from './NewLetter/NewsLetter';
 import Footer from './Footer/Footer';
 import Header from './Header';
@@ -16,7 +16,7 @@ function Home() {
    <Header />
     <About />
     <TrendingProduct />
-    <Product />
+    <Testimonal />
    
     <MayLike />
     <NewsLetter />
