@@ -533,7 +533,7 @@ body {
   border-radius: 50%;
 }
 
-.trend-nav {
+/* .trend-nav {
   display: flex;
   justify-content: space-around;
   padding-top: 100px;
@@ -601,7 +601,7 @@ body {
   margin-right: 10%;
  
  
-}
+} */
 
 .login-pg{
   height: 100vh;

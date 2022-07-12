@@ -7,7 +7,7 @@ import NewsLetter from './NewsLetter';
 import Footer from './Footer/Footer';
 import Header from './Header';
 import TrendingProduct from './TrendingProduct';
-import MayLike from './MayLike';
+import MayLike from './MayLike/MayLike';
 
 function Home() {
   return (
@@ -17,7 +17,7 @@ function Home() {
     <About />
     <TrendingProduct />
     <Product />
-    {/* <Testimonal /> */}
+   
     <MayLike />
     <NewsLetter />
     <Footer />
