@@ -3,7 +3,7 @@ import React from 'react'
 import About from './About/About';
 import Product from './Product';
 import Testimonal from './Testimonal';
-import NewsLetter from './NewsLetter';
+import NewsLetter from './NewLetter/NewsLetter';
 import Footer from './Footer/Footer';
 import Header from './Header';
 import TrendingProduct from './TrendingProduct';

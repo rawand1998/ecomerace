@@ -1,5 +1,6 @@
 import React from 'react'
 import { FaRegArrowAltCircleRight } from 'react-icons/fa';
+import './Style.css'
 function NewsLetter() {
   return (
     <div className="newsletter-container">
